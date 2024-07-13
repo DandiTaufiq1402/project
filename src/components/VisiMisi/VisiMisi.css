@@ -1,0 +1,124 @@
+/* Styling for VisiMisi component */
+.visimisi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .visimisi__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .visimisi__details {
+    flex: 1;
+  }
+  
+  .visimisi__details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .visimisi__details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .visimisi__details ul li {
+    margin-bottom: 5px;
+  }
+  
+  .btn_1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_1:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for Modal component */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+  
+  .modal__content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal.active .modal__content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .modal__header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal__header h1 {
+    font-size: 2rem;
+  }
+  
+  .modal__text {
+    margin-bottom: 20px;
+  }
+  
+  .modal__text p {
+    line-height: 1.6;
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal__close:hover {
+    color: #000;
+  }
+  

@@ -1,0 +1,176 @@
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 4px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.cpp h3 b{
+    text-align: center;
+    color: #fff;
+    text-align: justify;
+    font-size: 23px;
+}
+.logo {
+    width: 180px;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav  li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+.dark-nav {
+    background: #000F38;
+    transition: 0.5s;
+}
+
+.menu-icon {
+    display: none;
+}
+.dropdown-menu {
+    color: #fff;
+    display: none;
+    position: absolute;
+    background-color: #000F38;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 8px;
+    width: 160px; /* Lebar dropdown */
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    position: relative; /* Diperlukan untuk menempatkan garis bawah */
+}
+
+.dropdown-menu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Tinggi garis bawah */
+    width: 0;
+    background-color: #fff; /* Warna garis bawah */
+    transition: width 0.3s; /* Animasi lebar garis bawah */
+    color: #fff;
+}
+
+.dropdown-menu li:hover::after {
+    width: 100%; /* Panjang garis bawah saat dihover */
+}
+
+.dropdown-menu li:hover {
+    background-color: #dddddd1e; /* Warna latar belakang saat dihover */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style untuk membuat dropdown vertikal */
+.dropdown-menu.vertical {
+    width: 160px; /* Lebar dropdown */
+    top: 100%; /* Atur dropdown di bawah menu induk */
+    left: 0;
+}
+
+.dropdown-menu.vertical li {
+    width: 100%; /* Agar teks terpenuhi */
+    color: #fff;
+}
+
+.dropdown-menu.vertical li::after {
+    left: 0;
+}
+
+.dropdown-menu.vertical li:hover::after {
+    width: 100%; /* Panjang garis bawah saat dihover */
+}
+
+/* Media Query */
+@media (max-width: 840px) {
+    .logo {
+        width: 140px;
+    }
+    
+    nav li {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212ea0;
+        z-index: 0; /* Perbaikan nilai z-index */
+        width: 200px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column; /* Menu menjadi vertikal */
+        align-items: flex-start; /* Susunan dari atas ke bawah */
+        transition: 0.5s;
+    }
+    
+    nav  li {
+        display: block;
+        margin: 25px 40px;
+    }
+    
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 840px) {
+        .logo {
+            width: 140px;
+        }
+        
+        nav li{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #212ea0;
+            z-index: 10; /* Ubah kembali ke nilai z-index yang semestinya */
+            width: 200px;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: 0.5s;
+        }
+        
+        nav  li {
+            display: block;
+            margin: 25px 40px;
+        }
+        
+        .menu-icon {
+            display: block;
+            width: 30px;
+            cursor: pointer;
+        }
+        
+        .hide-mobile-menu {
+            right: 0; /* Perubahan agar menu muncul kembali saat tombol menu diklik */
+        }
+    }
+    
+}

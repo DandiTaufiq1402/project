@@ -1,0 +1,338 @@
+buatkan codingan dengan react dan css  dan buat gambar diatas animation timbul dan saat Potensi karir buat slide dari kanan dari setiap TEKNIK INFORMATIKA, SISTEM INFORMATIKA dan STUDI KAJIAN FILM, TELEVISI DAN MEDIA
+
+
+
+
+
+
+
+
+
+
+
+
+
+buatkan codingan dengan react dan css  dan buat gambar diatas animation timbul dan saat Potensi karir buat slide dari kanan dari setiap TEKNIK INFORMATIKA, SISTEM INFORMATIKA dan STUDI KAJIAN FILM, TELEVISI DAN MEDIA, dan juga app jsx sudah di isi dengan ketentuan  import React, { useState } from 'react'
+import Navbar from './components/Navbar/Navbar' //KADQANG GOlBOK codinganya
+import Hero from './components/hero/Hero/'
+import Programs from './components/Programs/Programs'
+import Title from './components/Title/Title'
+import About from './components/About/About'
+import Campus from './components/Campus/Campus'
+import Testimonials from './components/Testimonials/Testimonials'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import VideoPlayer from './components/VideoPlayer/VideoPlayer'
+
+const App = () => {
+
+  const [playState, setPlayState] = useState(false);
+  return (
+    <div>
+      <Navbar/>
+      <Hero/>
+      <div className='container'>
+      <Title subTitle='Our PROGRAM' Title='What we Offer'/>
+      <Programs/> 
+      <About setPlayState={setPlayState}/>  {/* ini video nya ganti global */}
+      <Title subTitle='Gallery' Title='Campus Photos'/>
+      <Campus/>
+      <Title subTitle='Testimoni Alumni' Title='Global Institute'/>
+      <Testimonials/>
+      <Title subTitle='Contact Us' Title='Get in Touct'/>
+      <Contact/>
+      <Footer/>
+    </div>
+    <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+    </div>
+  )
+}
+
+export default App
+itu dari src dan ini pun  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+}
+body{
+    background: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.container{
+    padding-left:100px;
+    padding-right: 100px;
+}
+.btn{
+    background: #fff;
+    color:#212121 ;
+    padding: 18px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn img{
+    width: 20px;
+    margin-left: 10pxs;
+}
+
+.btn.dark-btn{
+    background: #212EA0;
+    color: #fff;
+} sama dari scr juga sama ini import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+
+bedanya nama main jsx bukan 
+bukan index jsx dan itu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+buatkan codingan dengan react dan css  dan buat gambar diatas animation timbul dan saat Potensi karir buat slide dari kanan dari setiap TEKNIK INFORMATIKA, SISTEM INFORMATIKA dan STUDI KAJIAN FILM, TELEVISI DAN MEDIA, dan juga app jsx sudah di isi dengan ketentuan  import React, { useState } from 'react'
+import Navbar from './components/Navbar/Navbar' //KADQANG GOlBOK codinganya
+import Hero from './components/hero/Hero/'
+import Programs from './components/Programs/Programs'
+import Title from './components/Title/Title'
+import About from './components/About/About'
+import Campus from './components/Campus/Campus'
+import Testimonials from './components/Testimonials/Testimonials'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import VideoPlayer from './components/VideoPlayer/VideoPlayer'
+
+const App = () => {
+
+  const [playState, setPlayState] = useState(false);
+
+  return (
+    <div>
+      <Navbar/>
+      <Hero/>
+      <div className='container'>
+      <Title subTitle='Our PROGRAM' Title='What we Offer'/>
+      <Programs/> 
+      <About setPlayState={setPlayState}/>  {/* ini video nya ganti global */}
+      <Title subTitle='Gallery' Title='Campus Photos'/>
+      <Campus/>
+      <Title subTitle='Testimoni Alumni' Title='Global Institute'/>
+      <Testimonials/>
+      <Title subTitle='Contact Us' Title='Get in Touct'/>
+      <Contact/>
+      <Footer/>
+    </div>
+    <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+    </div>
+  )
+}
+
+export default App
+itu dari src dan ini pun  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+}
+body{
+    background: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.container{
+    padding-left:100px;
+    padding-right: 100px;
+}
+.btn{
+    background: #fff;
+    color:#212121 ;
+    padding: 18px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn img{
+    width: 20px;
+    margin-left: 10pxs;
+}
+
+.btn.dark-btn{
+    background: #212EA0;
+    color: #fff;
+} sama dari scr juga sama ini import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+
+bedanya nama main jsx bukan 
+bukan index jsx dan itu. nah ini  buat new floder di components dengan nama prodi dalam ketentuan tadi di atas  untuk ini Program Studi Teknik Informatika
+Program Studi Teknik Informatika adalah sebuah program pendidikan di Global Institute yang mempelajari tentang pengembangan, analisis, dan penggunaan teknologi informasi dan komputer. Mahasiswa yang mengambil program studi ini akan belajar tentang dasar-dasar teknologi informasi, pemrograman, database, jaringan komputer, keamanan informasi, pengembangan aplikasi, desain grafis, dan topik terkait lainnya. Tujuan utama dari program studi Teknik Informatika adalah untuk mempersiapkan lulusannya menjadi profesional di bidang teknologi informasi, seperti pengembang perangkat lunak, administrator jaringan, arsitek solusi teknologi, UI/UX design, atau konsultan TI. Selain itu, program ini juga bertujuan untuk memberikan dasar pengetahuan dan keterampilan untuk memecahkan masalah dalam berbagai industri dan bidang usaha yang bergantung pada teknologi informasi dan komputer.
+
+Pilihan Konsentrasi
+Konsentrasi :
+
+Software Engineering (SE) : Konsentrasi software engineering atau rekayasa perangkat lunak adalah sebuah disiplin ilmu yang berkaitan dengan pengembangan, perancangan, dan pembuatan perangkat lunak atau software. Bidang ini meliputi seluruh tahapan dalam siklus pengembangan perangkat lunak, mulai dari analisis kebutuhan, perancangan arsitektur, implementasi kode, pengujian, hingga pemeliharaan atau perbaikan perangkat lunak. Seorang software engineer atau insinyur perangkat lunak bertanggung jawab untuk membuat perangkat lunak yang aman, handal, efisien, mudah dimengerti, dan dapat diandalkan oleh pengguna. Mereka menggunakan metode, teknologi, dan alat yang tepat untuk membangun perangkat lunak yang sesuai dengan spesifikasi dan persyaratan klien atau pengguna. Konsentrasi software engineering juga meliputi konsep-konsep seperti manajemen proyek perangkat lunak, pengembangan perangkat lunak berbasis web, pengembangan aplikasi mobile, pengujian perangkat lunak, keamanan perangkat lunak, dan pengembangan aplikasi terdistribusi. Semua aspek ini penting dalam pengembangan perangkat lunak yang berkualitas tinggi dan dapat dipercaya oleh pengguna.
+Internet of Things (IoT) & Networking (IOTN) : Konsentrasi Internet of Things (IoT) dan Networking adalah dua bidang teknologi yang saling terkait dan memainkan peran penting dalam menghubungkan perangkat dan sistem dalam lingkungan digital yang semakin terkoneksi. Internet of Things (IoT) adalah konsep di mana berbagai perangkat yang terhubung ke internet, seperti sensor, kamera, alat kesehatan, kendaraan, dan peralatan rumah tangga, dapat saling berkomunikasi dan bertukar data untuk menghasilkan informasi yang berguna. IoT memungkinkan pengumpulan data secara real-time, analisis data yang lebih akurat, dan pengambilan keputusan yang lebih baik. Para ahli di bidang IoT bekerja pada pengembangan perangkat keras dan perangkat lunak, teknologi jaringan, keamanan, dan manajemen data yang diperlukan untuk mengimplementasikan solusi IoT. Sementara itu, bidang Networking fokus pada pengembangan, manajemen, dan pengoperasian jaringan komputer. Para ahli di bidang Networking mempelajari bagaimana membangun, mengkonfigurasi, dan mengoptimalkan jaringan komputer, termasuk teknologi seperti protokol jaringan, infrastruktur jaringan, keamanan jaringan, dan manajemen jaringan. Networking menjadi semakin penting dengan semakin banyaknya perangkat dan sistem yang terhubung ke internet dan memerlukan akses jaringan yang andal dan aman. Dalam praktiknya, para ahli di bidang IoT dan Networking sering bekerja sama untuk mengembangkan solusi teknologi yang terintegrasi dan terkoneksi. Kombinasi keahlian di kedua bidang ini diperlukan untuk mengembangkan solusi IoT yang aman, efisien, dan dapat diandalkan, serta memastikan jaringan yang mendukungnya berjalan dengan lancar dan dapat diakses dengan mudah.
+Computerized Design & Multimedia (CDM) : Konsentrasi Computerized and Multimedia adalah bidang teknologi yang berkaitan dengan pengembangan dan penggunaan teknologi komputer untuk menghasilkan konten multimedia yang interaktif dan menarik. Konsentrasi ini mencakup berbagai disiplin ilmu seperti desain grafis, animasi, audio, video, dan pengembangan aplikasi multimedia. Dalam konsentrasi ini, para ahli menggunakan perangkat lunak seperti Adobe Photoshop, Adobe Illustrator, Adobe Premiere, Adobe After Effects, Autodesk 3D Studio Max, dan sejumlah alat pengembangan perangkat lunak lainnya untuk membuat gambar, animasi, audio, dan video. Mereka juga mengembangkan aplikasi multimedia, baik untuk desktop maupun untuk perangkat seluler. Keahlian dalam bidang Computerized and Multimedia penting dalam mengembangkan berbagai jenis konten digital, seperti situs web interaktif, presentasi multimedia, game, video pendidikan, dan konten pemasaran. Ahli di bidang ini harus memahami aspek-aspek seperti desain grafis, animasi, audio, dan video serta teknologi yang diperlukan untuk menghasilkan produk yang berkualitas tinggi. Konsentrasi Computerized and Multimedia memiliki banyak aplikasi dalam industri seperti media, hiburan, pendidikan, kesehatan, bisnis, dan pemasaran. Semakin berkembangnya teknologi digital dan permintaan akan konten multimedia yang menarik, maka semakin banyak pula peluang karir yang tersedia di bidang ini.
+Potensi Karir
+SE
+IOTN
+CDM
+Web Developer
+Programer (Web, .Net & Mobile)
+Database Administrator
+System Implementor
+System Analyst & Rekayasa System
+System Testing & IT Support
+
+Program Studi Sistem Informasi
+Program studi sistem informasi adalah program pendidikan tinggi yang berkaitan dengan pengembangan, penggunaan, dan manajemen sistem informasi dalam suatu organisasi. Program ini menggabungkan aspek-aspek teknologi informasi dan bisnis, sehingga lulusan dari program studi ini memiliki kemampuan untuk memahami dan menerapkan teknologi informasi dalam konteks bisnis. Materi kuliah dalam program studi sistem informasi mencakup bidang-bidang seperti analisis sistem, manajemen proyek, desain basis data, keamanan informasi, manajemen jaringan, analisis bisnis, e-commerce, dan pengembangan aplikasi. Selain itu, para mahasiswa juga belajar tentang strategi bisnis dan manajemen, sehingga mereka memiliki pemahaman yang baik tentang bagaimana teknologi informasi dapat diterapkan untuk mencapai tujuan bisnis. Setelah lulus, lulusan program studi sistem informasi dapat bekerja di berbagai industri, seperti teknologi informasi, konsultasi bisnis, perbankan, asuransi, perusahaan manufaktur, dan organisasi pemerintah. Mereka dapat bekerja dalam posisi seperti analis sistem, pengembang aplikasi, manajer proyek, analis bisnis, manajer TI, dan banyak lagi. Dalam era digital yang semakin maju, sistem informasi menjadi semakin penting dalam operasi dan manajemen bisnis. Oleh karena itu, lulusan program studi sistem informasi memiliki peluang karir yang baik di masa depan dan akan terus dibutuhkan oleh berbagai jenis organisasi yang memerlukan keahlian dalam teknologi informasi dan bisnis.
+
+Pilihan Konsentrasi
+Konsentrasi :
+
+Accounting Information System (AIS) : Konsentrasi Accounting Information System (AIS) adalah bidang yang berkaitan dengan pengembangan, penggunaan, dan manajemen sistem informasi akuntansi dalam suatu organisasi. Bidang ini menggabungkan aspek-aspek akuntansi dan teknologi informasi, sehingga lulusan dari bidang ini memiliki pemahaman yang baik tentang bagaimana teknologi informasi dapat digunakan untuk memfasilitasi proses akuntansi dan manajemen keuangan. Materi kuliah dalam bidang AIS mencakup bidang-bidang seperti akuntansi keuangan, manajemen keuangan, basis data, sistem informasi, pengendalian internal, dan audit. Selain itu, para mahasiswa juga belajar tentang teknologi informasi yang digunakan dalam operasi dan manajemen keuangan, seperti perangkat lunak akuntansi, sistem manajemen basis data, dan aplikasi analisis keuangan. Setelah lulus, lulusan bidang AIS dapat bekerja di berbagai industri, seperti akuntansi, keuangan, konsultasi bisnis, perbankan, dan organisasi pemerintah. Mereka dapat bekerja dalam posisi seperti akuntan, auditor, analis keuangan, manajer keuangan, dan banyak lagi. Dalam era digital yang semakin maju, sistem informasi akuntansi menjadi semakin penting dalam operasi dan manajemen keuangan. Oleh karena itu, lulusan bidang AIS memiliki peluang karir yang baik di masa depan dan akan terus dibutuhkan oleh berbagai jenis organisasi yang memerlukan keahlian dalam teknologi informasi dan akuntansi.
+Management Information System (MIS) : Konsentrasi Management Information System (MIS) adalah bidang yang berkaitan dengan pengembangan, penggunaan, dan manajemen sistem informasi dalam suatu organisasi untuk memfasilitasi pengambilan keputusan dan manajemen bisnis yang efektif. Bidang ini menggabungkan aspek-aspek teknologi informasi dan manajemen, sehingga lulusan dari bidang ini memiliki pemahaman yang baik tentang bagaimana teknologi informasi dapat digunakan untuk mendukung manajemen dan pengambilan keputusan dalam bisnis. Materi kuliah dalam bidang MIS mencakup bidang-bidang seperti manajemen proyek, analisis bisnis, manajemen basis data, sistem informasi, keamanan informasi, manajemen jaringan, e-commerce, dan pengembangan aplikasi. Selain itu, para mahasiswa juga belajar tentang strategi bisnis dan manajemen, sehingga mereka memiliki pemahaman yang baik tentang bagaimana teknologi informasi dapat diterapkan untuk mencapai tujuan bisnis. Setelah lulus, lulusan bidang MIS dapat bekerja di berbagai industri, seperti teknologi informasi, konsultasi bisnis, perbankan, asuransi, perusahaan manufaktur, dan organisasi pemerintah. Mereka dapat bekerja dalam posisi seperti analis sistem, pengembang aplikasi, manajer proyek, analis bisnis, manajer TI, dan banyak lagi. Dalam era digital yang semakin maju, sistem informasi manajemen menjadi semakin penting dalam operasi dan manajemen bisnis. Oleh karena itu, lulusan bidang MIS memiliki peluang karir yang baik di masa depan dan akan terus dibutuhkan oleh berbagai jenis organisasi yang memerlukan keahlian dalam teknologi informasi dan manajemen.
+Logistic & Production Information System (LPIS) : Konsentrasi Logistic & Production Information System (LPIS) adalah bidang yang berkaitan dengan pengembangan, penggunaan, dan manajemen sistem informasi dalam bidang logistik dan produksi dalam suatu organisasi. Bidang ini menggabungkan aspek-aspek teknologi informasi, logistik, dan manajemen produksi, sehingga lulusan dari bidang ini memiliki pemahaman yang baik tentang bagaimana teknologi informasi dapat digunakan untuk meningkatkan efisiensi dan efektivitas operasi logistik dan produksi. Materi kuliah dalam bidang LPIS mencakup bidang-bidang seperti manajemen rantai pasok, manajemen produksi, manajemen persediaan, sistem informasi, pengendalian kualitas, analisis data, dan manajemen proyek. Selain itu, para mahasiswa juga belajar tentang teknologi informasi yang digunakan dalam operasi dan manajemen logistik dan produksi, seperti sistem manajemen basis data, perangkat lunak manajemen persediaan, dan aplikasi analisis data. Setelah lulus, lulusan bidang LPIS dapat bekerja di berbagai industri, seperti manufaktur, perdagangan, logistik, dan organisasi pemerintah. Mereka dapat bekerja dalam posisi seperti analis logistik, analis produksi, manajer logistik, manajer produksi, manajer rantai pasok, dan banyak lagi. Dalam era digital yang semakin maju, sistem informasi logistik dan produksi menjadi semakin penting dalam operasi dan manajemen bisnis. Oleh karena itu, lulusan bidang LPIS memiliki peluang karir yang baik di masa depan dan akan terus dibutuhkan oleh berbagai jenis organisasi yang memerlukan keahlian dalam teknologi informasi dan manajemen logistik dan produksi.
+Potensi Karir
+AIS
+MIS
+LPIS
+Staf Akuntansi
+Account Officer
+Konsultan Pajak
+Akuntan Pendidik
+Inventory Control Staff
+Administrasi Gudang
+
+
+Program Studi Kajian Film, Televisi & Media
+Program Studi Kajian Film, Televisi dan Media (KFTM) mempelajari berbagai aspek film, televisi, dan media secara teoritis dan praktis. Mahasiswa akan mempelajari sejarah, estetika, produksi, dan distribusi film dan televisi, serta berbagai aspek media lainnya seperti media sosial, media massa, dan media digital. Lulusan KFTM diharapkan memiliki pengetahuan dan keterampilan yang luas mengenai film, televisi, dan media, serta mampu bekerja secara profesional di industri kreatif, media, dan komunikasi. Selain itu, lulusan KFTM juga diharapkan memiliki kemampuan berpikir kritis dan analitis dalam menganalisis dan mengkaji film, televisi, dan media.
+
+Pilihan Konsentrasi
+Konsentrasi :
+
+Visual Media Communication (VMC) : Konsentrasi Visual Media Communication (VMC) berfokus pada aspek visual dan estetika dalam film, televisi, dan media. Mahasiswa akan mempelajari berbagai teknik dan teori visual storytelling, desain grafis, animasi, dan multimedia. Lulusan VMC diharapkan memiliki kemampuan untuk membuat konten visual yang menarik dan informatif, memahami dan menggunakan berbagai software desain dan multimedia, bekerja secara kreatif dan kolaboratif dalam tim, memahami dan menganalisis budaya visual.
+Public Relation & Digital Communication (PRDC) : Konsentrasi Public Relation & Digital Communication (PRDC) berfokus pada strategi komunikasi dan penggunaan media digital dalam membangun dan memelihara hubungan dengan publik. Mahasiswa akan mempelajari berbagai teori dan praktik public relations, media sosial, dan komunikasi digital. Lulusan PRDC diharapkan memiliki kemampuan untuk menyusun strategi komunikasi yang efektif, menggunakan media digital untuk membangun dan memelihara hubungan dengan publik, menganalisis dan mengukur efektivitas program komunikasi, memahami dan mengikuti perkembangan teknologi komunikasi digital.
+Potensi Karir
+VMC
+PRDC
+Desainer grafis
+Animator
+Video editor
+Content creator
+Motion graphic artist
+Visual effects artist
+ BUAT BAGUS HARUS BERI PENJELASAN NYA JUGA
+ini harus seuai semua paragrafnya
+
+
+
+
+
+src
+│
+├── components
+│   ├── Navbar
+│   │   └── Navbar.jsx
+│   ├── hero
+│   │   └── Hero.jsx
+│   ├── Programs
+│   │   └── Programs.jsx
+│   ├── Title
+│   │   └── Title.jsx
+│   ├── About
+│   │   └── About.jsx
+│   ├── Campus
+│   │   └── Campus.jsx
+│   ├── Testimonials
+│   │   └── Testimonials.jsx
+│   ├── Contact
+│   │   └── Contact.jsx
+│   ├── Footer
+│   │   └── Footer.jsx
+│   ├── VideoPlayer
+│   │   └── VideoPlayer.jsx
+│   ├── Jurusan
+│       ├── ProgramStudiTeknikInformatika
+│           ├── ImageWithAnimation.jsx
+│           └── CareerPotential.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+
+
+
+
+

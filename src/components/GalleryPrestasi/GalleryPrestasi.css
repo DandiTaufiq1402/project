@@ -1,0 +1,51 @@
+/* GalleryPrestasi.css */
+
+.gallery-prestasi {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.gallery-prestasi h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.organisasi-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-height: 600px; /* Atur maksimal tinggi */
+  overflow-y: auto; /* Tambahkan overflow untuk scrolling */
+}
+
+.organisasi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Ubah jumlah kolom menjadi 2 */
+  gap: 20px;
+}
+
+.prestasi-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007BFF;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.prestasi-item:hover {
+  background-color: #f1f1f1;
+  transform: translateX(5px);
+}
+
+.prestasi-item strong {
+  color: #007BFF;
+  margin-right: 10px;
+}

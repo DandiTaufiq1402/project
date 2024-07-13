@@ -1,0 +1,74 @@
+/* AcademicGuide.css */
+.academic-guide {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .academic-guide h1 {
+    text-align: center;
+    color: #0056b3;
+  }
+  
+  .academic-guide section {
+    margin-bottom: 40px;
+  }
+  
+  .academic-guide h2 {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    display: flex;
+    align-self: self-end;
+  }
+  
+  .academic-guide h3 {
+    color: #0056b3;
+  }
+  
+  .academic-guide p {
+    line-height: 1.6;
+  }
+  
+  .academic-guide ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #187aeb;
+    box-shadow: 0px 15px 20px rgba(8, 83, 224, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  .academic-guide .footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+  }
+  p{
+    text-align: justify;
+  }
+  
